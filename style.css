@@ -1,0 +1,376 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo{
+    margin-top: 50px;
+    margin-left: 100px;
+    z-index: 10;
+    width: 100px;
+}
+
+.line{
+    height: 1px;
+    width: 18vw;
+    background-color: black;
+    opacity: 0.6;
+    margin-top: 50px;
+}
+
+.nav-item{
+    margin-right: 70px;
+    margin-top: 50px;
+}
+
+.page{
+    display: flex;
+}
+
+.left{
+    width: 540px;
+}
+
+.left>img{
+    position: fixed;
+    top: -10px;
+    left: 0px;
+    z-index: -1;
+    height: 830px;
+    width: 520px;
+}
+
+.middle{
+    margin-left: 50px;
+    margin-top: 50px;
+    
+}
+
+
+.middle>h1{
+    font-size: 70px;
+    font-family: 'Merriweather', serif;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+
+span{
+    margin-left: 70px;
+    font-family: 'Merriweather', serif;
+    font-family: 'Rubik Moonrocks', cursive;
+}
+
+.middle>p{
+    margin-left: 350px;
+    font-size: 20px;
+    color: rgb(80, 79, 79);
+    margin-top: -80px;
+    font-family: merriweather, serif;
+}
+
+.button{
+    padding: 7px 35px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(39, 39, 39);
+    border: none;
+    margin-top: 20px;
+    margin-left: 350px;
+}
+
+
+.end{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1260px;
+    gap: 30px;
+    margin-top: -220px;
+}
+
+ul li{
+    font-size: 25px;
+    margin-left: 550px;
+    margin-top: 30px;
+    color: rgb(80, 79, 79);
+}
+
+ul:first-child{
+    color: black;
+}
+
+.img-2{
+    width: 30px;
+}
+
+.off{
+    margin-left: 780px;
+    margin-top: -230px;
+}
+
+.off>p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+.img-3{
+    width: 400px;
+    height: 200px;
+}
+
+.last{
+    margin-left: 1250px;
+    margin-top: -180px;
+}
+
+.img-4{
+    width: 50px;
+    height: 100px; 
+}
+
+@media screen and (max-width:480px){  
+    .nav-items{
+        display: none;
+    }
+    
+    .logo{
+        margin-left: 100px;
+        width: 100px;
+    }
+      
+    .page{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 240px;
+    }
+    
+    .left>img{
+        position: fixed;
+        top: -10px;
+        left: 0px;
+        z-index: -1;
+        height: 430px;
+        width: 350px;
+    }
+    
+    .middle{
+        margin-left: 100px;
+        margin-top: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .middle>h1{
+        font-size: 50px;
+        font-family: 'Merriweather', serif;
+        font-family: 'Rubik Moonrocks', cursive;
+    }
+    
+    
+    span{
+        margin-left: 50px;
+        font-family: 'Merriweather', serif;
+        font-family: 'Rubik Moonrocks', cursive;
+    }
+    
+    .middle>p{
+        margin-left: 50px;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    
+    .button{
+        padding: 7px 35px;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+    
+    
+    .end{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        gap: 30px;
+        margin-top: -200px;
+    }
+    
+    ul li{
+        display: none;
+        font-size: 25px;
+        margin-left: 500px;
+        margin-top: 28px;
+    }
+    
+    ul:first-child{
+        color: black;
+    }
+    
+    .off{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    
+    .off>p{
+        font-size: 15px;
+    }
+
+    .last{
+        margin-left: 1250px;
+        margin-top: -180px;
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:1024px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+        font-size: 20px;
+    }
+    
+    .logo{
+        margin-top: 50px;
+        margin-left: 50px;
+        z-index: 10;
+        width: 50px;
+    }
+    
+    .line{
+        height: 1px;
+        width: 10vw;
+    }
+    
+    .nav-item{
+        margin-right: 100px;
+        margin-top: 50px;
+    }
+    
+    .page{
+        display: flex;
+    }
+    
+    .left{
+        width: 440px;
+    }
+    
+    .left>img{
+        position: fixed;
+        top: -10px;
+        left: 0px;
+        z-index: -1;
+        height: 830px;
+        width: 450px;
+    }
+    
+    .middle{
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+    
+    
+    .middle>h1{
+        font-size: 70px;
+        font-family: 'Merriweather', serif;
+        font-family: 'Rubik Moonrocks', cursive;
+    }
+    
+    
+    span{
+        margin-left: 70px;
+        font-family: 'Merriweather', serif;
+        font-family: 'Rubik Moonrocks', cursive;
+    }
+    
+    .middle>p{
+        margin-left: 320px;
+        font-size: 20px;
+        color: rgb(80, 79, 79);
+        margin-top: -50px;
+        font-family: merriweather, serif;
+    }
+    
+    .button{
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+    
+    
+    .end{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1000px;
+        gap: 30px;
+        margin-top: -220px;
+    }
+    
+    ul li{
+        font-size: 20px;
+        margin-left: 550px;
+        margin-top: 50px;
+        color: rgb(80, 79, 79);
+    }
+    
+    ul:first-child{
+        color: black;
+    }
+    
+    .img-2{
+        width: 20px;
+    }
+    
+    .off{
+        margin-left: 780px;
+        margin-top: -320px;
+    }
+    
+    .off>p{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 18px;
+        margin-right: 30px;
+    }
+    
+    .img-3{
+        width: 300px;
+        height: 180px;
+    }
+    
+    .last{
+        margin-left: 1000px;
+        margin-top: -320px;
+    }
+    
+    .img-4{
+        width: 50px;
+        height: 100px; 
+    }
+}
